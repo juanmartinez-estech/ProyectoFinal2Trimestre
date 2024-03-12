@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grupohome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <item
+            android:id="@+id/homeFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Home" />
+    </group>
+    <group
+        android:id="@+id/grupoequipo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <item
+            android:id="@+id/clasificacionFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Clasificación" />
+        <item
+            android:id="@+id/plantillaFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Plantilla" />
+        <item
+            android:id="@+id/gaeriaFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Galeria" />
+    </group>
+    <group
+        android:id="@+id/grupocontacto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <item
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Contacto" />
+        <item
+            android:id="@+id/ayudaFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Ayuda" />
+    </group>
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mi_navegacion"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.proyectofinal2trimestre.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home" />
+    <fragment
+        android:id="@+id/clasificacionFragment"
+        android:name="com.example.proyectofinal2trimestre.ClasificacionFragment"
+        android:label="ClasificacionFragment"
+        tools:layout="@layout/clasificacion" />
+    <fragment
+        android:id="@+id/plantillaFragment"
+        android:name="com.example.proyectofinal2trimestre.PlantillaFragment"
+        android:label="PlantillaFragment"
+        tools:layout="@layout/plantilla_layout" />
+    <fragment
+        android:id="@+id/gaeriaFragment"
+        android:name="com.example.proyectofinal2trimestre.GaeriaFragment"
+        android:label="GaeriaFragment"
+        tools:layout="@layout/gaeria" />
+    <fragment
+        android:id="@+id/contacto"
+        android:name="com.example.proyectofinal2trimestre.Contacto"
+        android:label="Contacto"
+        tools:layout="@layout/contacto_layout" />
+    <fragment
+        android:id="@+id/ayudaFragment"
+        android:name="com.example.proyectofinal2trimestre.AyudaFragment"
+        android:label="AyudaFragment"
+        tools:layout="@layout/ayuda_layout" />
+</navigation>

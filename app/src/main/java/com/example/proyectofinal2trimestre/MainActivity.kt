@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.clasificacionFragment,
                 R.id.plantillaFragment,
                 R.id.gaeriaFragment,
-                R.id.contacto,
+                R.id.contactoFragment,
                 R.id.ayudaFragment,
             ), binding.drawerlayout
         )

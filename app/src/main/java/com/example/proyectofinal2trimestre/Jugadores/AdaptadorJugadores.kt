@@ -1,10 +1,11 @@
-package com.example.proyectofinal2trimestre
+package com.example.proyectofinal2trimestre.Jugadores
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.core.os.bundleOf
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.example.proyectofinal2trimestre.R
 import com.example.proyectofinal2trimestre.databinding.HolderJugadoresBinding
 
 
@@ -28,9 +29,19 @@ class AdaptadorJugadores(val listado2: ArrayList<Jugador>) : RecyclerView.Adapte
     override fun onBindViewHolder(holder: ClaseCelda2, position: Int) {
         val jugador = listado2[position]
 
+
         holder.binding.imageView4.setImageResource(jugador.imagen)
         //holder.binding.
-        holder.binding.nombrejugador.text = jugador.nombre.toString()
+        holder.binding.nombrejugador.text = jugador.apodo.toString()
         holder.binding.posicionjugador.text = jugador.posicion.toString()
+
+
+        holder.itemView.setOnClickListener {
+
+            val bundle = bundleOf("jugador" to jugador)
+
+//            Navigation.findNavController(it).navigate(R.id.action_playersFragment_to_playerDetailFragment)
+            holder.itemView.findNavController().navigate(R.id.action_plantillaFragment_to_infoJugadorFragment,bundle)
+        }
     }
 }

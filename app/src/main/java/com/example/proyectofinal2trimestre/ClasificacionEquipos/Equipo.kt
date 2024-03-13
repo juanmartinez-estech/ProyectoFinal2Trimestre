@@ -1,4 +1,4 @@
-package com.example.proyectofinal2trimestre
+package com.example.proyectofinal2trimestre.ClasificacionEquipos
 
 data class Equipo(
     var posicion: Int,

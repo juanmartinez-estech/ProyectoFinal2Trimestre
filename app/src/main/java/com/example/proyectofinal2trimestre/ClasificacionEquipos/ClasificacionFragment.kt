@@ -1,12 +1,12 @@
-package com.example.proyectofinal2trimestre
+package com.example.proyectofinal2trimestre.ClasificacionEquipos
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.proyectofinal2trimestre.R
 import com.example.proyectofinal2trimestre.databinding.ClasificacionBinding
 
 class ClasificacionFragment : Fragment() {

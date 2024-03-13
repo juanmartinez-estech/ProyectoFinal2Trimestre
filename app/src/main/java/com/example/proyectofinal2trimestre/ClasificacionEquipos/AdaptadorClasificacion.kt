@@ -1,9 +1,8 @@
-package com.example.proyectofinal2trimestre
+package com.example.proyectofinal2trimestre.ClasificacionEquipos
 
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyectofinal2trimestre.databinding.HolderEquiposBinding
 

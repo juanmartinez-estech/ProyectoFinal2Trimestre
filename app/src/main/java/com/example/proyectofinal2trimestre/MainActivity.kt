@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.plantillaFragment,
                 R.id.gaeriaFragment,
                 R.id.contactoFragment,
-                R.id.ayudaFragment,
             ), binding.drawerlayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

@@ -20,6 +20,8 @@ class LoginActivity : AppCompatActivity(){
         val usersaved = misPreferencias.getString("user", "")
         val passaved = misPreferencias.getString("pass", "")
 
+
+
 //      Si abres la aplicacion por primera vez (Nunca has introducido un usuario) entonces el placeholder del tvUsuario es "Usuario", al contrario seria el ultimo usuario introducido
         if (usersaved != null) {
             if (usersaved.isEmpty()){
@@ -64,33 +66,37 @@ class LoginActivity : AppCompatActivity(){
     }
 
     private fun compruebaLogin(user: String, pass: String) {
-//        var usuarioinvitado = "invitado"
-//        var passinvitado = "estech1234"
-//        var usuarioalumno = "alumno"
-//        var passalumno = "alumno1234"
-//        var usuarioprofesor = "profesor"
-//        var passprofesor = "profesor1234"
-//
-//        if (user.isEmpty() && pass.isEmpty()) {
-//            binding.tvUsuario.error = "El campo está vacío"
-//            binding.tvContrasena.error = "El campo está vacío"
-//            return
-//        }
-//
-//        if (user == usuarioinvitado && pass == passinvitado || user == usuarioalumno && pass == passalumno || user == usuarioprofesor && pass == passprofesor){
-//            val usersaved = misPreferencias.edit()
-//            usersaved.putString("user", user)
-//            usersaved.apply()
-//
-//            val passsaved = misPreferencias.edit()
-//            passsaved.putString("user", pass)
-//            passsaved.apply()
-//          openNextScreen()
-//        }else{
-//            binding.tvUsuario.error = "El usuario o la contraseña es incorrecta"
-//            binding.tvContrasena.error = "El usuario o la contraseña es incorrecta"
-//            return
-//        }
+        val misPreferencias = getSharedPreferences("myprefs", MODE_PRIVATE)
+        val usersaved = misPreferencias.getString("user", "")
+        val passaved = misPreferencias.getString("pass", "")
+
+        var usuarioinvitado = "invitado"
+        var passinvitado = "estech1234"
+        var usuarioalumno = "alumno"
+        var passalumno = "alumno1234"
+        var usuarioprofesor = "profesor"
+        var passprofesor = "profesor1234"
+
+        if (user.isEmpty() && pass.isEmpty()) {
+            binding.tvUsuario.error = "El campo está vacío"
+            binding.tvContrasena.error = "El campo está vacío"
+            return
+        }
+
+        if (user == usuarioinvitado && pass == passinvitado || user == usuarioalumno && pass == passalumno || user == usuarioprofesor && pass == passprofesor){
+            val usersaved = misPreferencias.edit()
+            usersaved.putString("user", user)
+            usersaved.apply()
+
+            val passsaved = misPreferencias.edit()
+            passsaved.putString("user", pass)
+            passsaved.apply()
+          openNextScreen()
+        }else{
+            binding.tvUsuario.error = "El usuario o la contraseña es incorrecta"
+            binding.tvContrasena.error = "El usuario o la contraseña es incorrecta"
+            return
+        }
         openNextScreen()
     }
 

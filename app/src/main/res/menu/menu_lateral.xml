@@ -40,10 +40,5 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:title="Contacto" />
-        <item
-            android:id="@+id/ayudaFragment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:title="Ayuda" />
     </group>
 </menu>

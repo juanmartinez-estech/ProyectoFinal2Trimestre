@@ -23,9 +23,9 @@ class GaeriaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?){
         super.onViewCreated(view, savedInstanceState)
 
-        val imagen1 = GaeriaData(R.drawable.abraham)
-        val imagen2 = GaeriaData(R.drawable.abraham)
-        val imagen3 = GaeriaData(R.drawable.abraham)
+        val imagen1 = GaeriaData(R.drawable.villacarrillvillanueva)
+        val imagen2 = GaeriaData(R.drawable.villacarrillochurriana1)
+        val imagen3 = GaeriaData(R.drawable.villacarrillochurriana)
 
 
 //        val arrayImagenes = ArrayList<GaeriaData>()

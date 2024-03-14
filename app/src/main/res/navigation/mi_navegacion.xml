@@ -7,18 +7,18 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.proyectofinal2trimestre.HomeFragment"
-        android:label="HomeFragment"
+        android:label="Home"
         tools:layout="@layout/home" />
     <fragment
         android:id="@+id/clasificacionFragment"
         android:name="com.example.proyectofinal2trimestre.ClasificacionEquipos.ClasificacionFragment"
-        android:label="ClasificacionFragment"
+        android:label="Clasificacion"
         tools:layout="@layout/clasificacion" />
     <fragment
         android:id="@+id/plantillaFragment"
         android:name="com.example.proyectofinal2trimestre.Jugadores.PlantillaFragment"
-        android:label="PlantillaFragment"
-        tools:layout="@layout/plantilla_layout" >
+        android:label="Plantilla"
+        tools:layout="@layout/plantilla_layout">
         <action
             android:id="@+id/action_plantillaFragment_to_infoJugadorFragment"
             app:destination="@id/infoJugadorFragment" />
@@ -26,20 +26,15 @@
     <fragment
         android:id="@+id/gaeriaFragment"
         android:name="com.example.proyectofinal2trimestre.Galeria.GaeriaFragment"
-        android:label="GaeriaFragment"
+        android:label="Galeria"
         tools:layout="@layout/gaeria" />
     <fragment
         android:id="@+id/contactoFragment"
         android:name="com.example.proyectofinal2trimestre.ContactoFragment"
-        android:label="ContactoFragment"
+        android:label="Contacto"
         tools:layout="@layout/contacto_layout" />
-    <fragment
-        android:id="@+id/ayudaFragment"
-        android:name="com.example.proyectofinal2trimestre.AyudaFragment"
-        android:label="AyudaFragment"
-        tools:layout="@layout/ayuda_layout" />
     <fragment
         android:id="@+id/infoJugadorFragment"
         android:name="com.example.proyectofinal2trimestre.Jugadores.InfoJugadorFragment"
-        android:label="InfoJugadorFragment" />
+        android:label="Info Juagor" />
 </navigation>

@@ -1,6 +1,8 @@
 package com.example.proyectofinal2trimestre
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -19,6 +21,7 @@ class LoginActivity : AppCompatActivity(){
         val misPreferencias = getSharedPreferences("myprefs", MODE_PRIVATE)
         val usersaved = misPreferencias.getString("user", "")
         val passaved = misPreferencias.getString("pass", "")
+        val checkboxsaved = misPreferencias.getBoolean("chbox", false)
 
 
 
@@ -31,9 +34,6 @@ class LoginActivity : AppCompatActivity(){
             }
         }
 
-        if (binding.checkBox.isChecked){
-            binding.tvContrasena.setText(passaved)
-        }
 
         binding.btLogin.setOnClickListener {
             val user = binding.tvUsuario.text.toString()
@@ -45,8 +45,20 @@ class LoginActivity : AppCompatActivity(){
             usersaved.apply()
 
             val passsaved = misPreferencias.edit()
-            passsaved.putString("user", pass)
+            passsaved.putString("pass", pass)
             passsaved.apply()
+
+            if (binding.checkBox.isChecked){
+                val checkboxsaved = misPreferencias.edit()
+                checkboxsaved.putBoolean("chbox", true)
+                checkboxsaved.apply()
+            }
+        }
+
+        if (checkboxsaved == true){
+            binding.tvContrasena.setText(passaved)
+        }else{
+            binding.tvContrasena.setText("")
         }
 
         binding.btOlvidarcontrasena.setOnClickListener {
@@ -62,6 +74,17 @@ class LoginActivity : AppCompatActivity(){
             dialog.show()
         }
 
+
+        binding.floatingActionButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_DIAL).apply {
+                data = Uri.parse("tel: 953 636 000")
+            }
+            try {
+                startActivity(intent)
+            } catch (ex: ActivityNotFoundException) {
+                Toast.makeText(this, "La aplicacion de Telefono no esta instalada", Toast.LENGTH_SHORT).show()
+            }
+        }
 
     }
 

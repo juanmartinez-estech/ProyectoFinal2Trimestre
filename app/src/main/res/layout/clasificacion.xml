@@ -7,14 +7,12 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="160dp"
-        android:layout_height="16dp"
+        android:layout_width="164dp"
+        android:layout_height="20dp"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginTop="12dp"
         android:gravity="center_horizontal"
         android:text="Equipo"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,8 +20,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
         android:text="Pt"
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,8 +30,8 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:text="Pj"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +39,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="407dp"
-        android:layout_height="705dp"
+        android:layout_height="693dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
